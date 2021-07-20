@@ -1,0 +1,39 @@
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  transform: scale(
+    1.05
+  ); /*This creates a popping out effect whenever we hover over the elements with class btn*/
+}
+
+/* Structure variant */
+.outlined {
+  border: 1px solid white;
+  background: transparent;
+}
+
+/* Colour variant */
+.primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.light {
+  background-color: var(--light-color);
+  color: #333;
+}

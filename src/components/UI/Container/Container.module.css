@@ -1,0 +1,6 @@
+.container {
+  max-width: 1100px; /* Since we have setup a max width of the container, the width of the container will not grow when we change the width of the browser window*/
+  margin: 0 auto;
+  overflow: hidden; /* Since we have set up a top and bottom margin of 10px for the h1, we have a gap on the top of the navbar, to fix that gap we are using overflow, overfow = hidden will hide the scroll bar that can show in side*/
+  padding: 0 40px;
+}
