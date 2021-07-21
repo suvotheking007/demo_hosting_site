@@ -22,24 +22,20 @@ const colors = createTheme({
       main: "#1c3fa8",
     },
   },
-  breakpoints: {
-    values: {
-      cnt: 1200,
-    },
-  },
 });
 
 function App() {
   return (
-    <ThemeProvider theme={colors}>
+    <div>
       <CssBaseline />
-
-      <Header />
-      <Container maxWidth="md">
-        <h1>Body</h1>
-        <h1>Footer</h1>
-      </Container>
-    </ThemeProvider>
+      <ThemeProvider theme={colors}>
+        <Header />
+        <Container maxWidth="lg">
+          <h1>Body</h1>
+          <h1>Footer</h1>
+        </Container>
+      </ThemeProvider>
+    </div>
   );
 }
 

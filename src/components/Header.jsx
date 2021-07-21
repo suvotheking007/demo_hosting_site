@@ -4,7 +4,6 @@ import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import Navbar from "./Navbar";
-import Navbar2 from "./Navbar_2";
 
 const useStyles = makeStyles({
   root: {
@@ -18,8 +17,8 @@ function Header() {
 
   return (
     <div className={classes.root}>
-      <Container maxWidth="md">
-        <Navbar2 />
+      <Container maxWidth="lg">
+        {/* <Navbar2 /> */}
         <Navbar />
         {/* Showcase */}
       </Container>
