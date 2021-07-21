@@ -1,7 +1,0 @@
-.card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /*This shadow giving scheme makes the card looks like it's coming out of the page*/
-  padding: 20px;
-  margin: 10px;
-}
