@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
       width: 450,
     },
     backgroundColor: `${globalTheme.palette.primary.main}`,
+    // boxShadow: "none",
   },
 }));
 
@@ -35,6 +36,7 @@ export default function Showcase() {
       expanded={expanded === "panel1"}
       onChange={handleChange("panel1")}
       className={classes.root}
+      elevation={0}
     >
       <AccordionSummary
         expandIcon={<ExpandMoreIcon style={{ fill: "white" }} />}
