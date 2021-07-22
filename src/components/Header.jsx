@@ -1,28 +1,33 @@
 import React from "react";
 
-import { Container } from "@material-ui/core";
+import globalTheme from "../customTheme";
+import { Container, Box, ThemeProvider } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import Navbar from "./Navbar";
+import Showcase from "./Showcase";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    background: "#047aed",
-    height: "100%",
+    height: "inherit",
+    [theme.breakpoints.up("sm")]: {
+      height: 240,
+    },
   },
-});
+}));
 
 function Header() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Container maxWidth="lg">
-        {/* <Navbar2 /> */}
-        <Navbar />
-        {/* Showcase */}
-      </Container>
-    </div>
+    <ThemeProvider theme={globalTheme}>
+      <Box bgcolor="primary.main" className={classes.root}>
+        <Container maxWidth="lg">
+          <Navbar />
+          <Showcase />
+        </Container>
+      </Box>
+    </ThemeProvider>
   );
 }
 
