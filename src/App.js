@@ -2,7 +2,7 @@ import "@fontsource/roboto";
 
 import React from "react";
 
-import Header from "./components/Header";
+import Header from "./head_components/Header";
 
 import globalTheme from "./customTheme";
 import { CssBaseline, Container } from "@material-ui/core";
