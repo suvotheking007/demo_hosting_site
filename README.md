@@ -11,7 +11,6 @@
 
 ### `Features of the landing page ->`
 
-`1` Clicking on the 'readMore' button present on the 'HeaderText' and 'IntroText' component reveals more intro text by moving itself downwards and changing into 'readLess' button.
 
 `2` Form will be validated with proper rules for filling up that will appear below while filling up the form. Send action of the form will change the form content to 'Your Form has been submitted',
 
