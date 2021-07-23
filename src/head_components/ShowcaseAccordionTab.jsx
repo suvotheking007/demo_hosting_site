@@ -1,13 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  makeStyles,
-  Tabs,
-  Tab,
-  Typography,
-  Box,
-  ThemeProvider,
-} from "@material-ui/core";
+import { makeStyles, Tabs, Tab, Typography, Box } from "@material-ui/core";
 
 import globalTheme from "../customTheme";
 
@@ -66,36 +59,34 @@ export default function ShowcaseAccordionTab() {
   };
 
   return (
-    <ThemeProvider theme={globalTheme}>
-      <div className={classes.root}>
-        <Tabs
-          orientation="vertical"
-          variant="scrollable"
-          value={value}
-          onChange={handleChange}
-          aria-label="Vertical tabs example"
-          className={classes.tabs}
-          TabIndicatorProps={{
-            style: { background: `${globalTheme.palette.primary.main}` },
-          }}
-        >
-          <Tab label="For Linux" {...a11yProps(0)} />
-          <Tab label="For Mac" {...a11yProps(1)} />
-          <Tab label="Ror Windows" {...a11yProps(2)} />
-        </Tabs>
-        <TabPanel value={value} index={0}>
-          Item One
-          {/* Linux image */}
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          Item Two
-          {/* Mac */}
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          Item Three
-          {/* Windows */}
-        </TabPanel>
-      </div>
-    </ThemeProvider>
+    <div className={classes.root}>
+      <Tabs
+        orientation="vertical"
+        variant="scrollable"
+        value={value}
+        onChange={handleChange}
+        aria-label="Vertical tabs example"
+        className={classes.tabs}
+        TabIndicatorProps={{
+          style: { background: `${globalTheme.palette.primary.main}` },
+        }}
+      >
+        <Tab label="For Linux" {...a11yProps(0)} />
+        <Tab label="For Mac" {...a11yProps(1)} />
+        <Tab label="Ror Windows" {...a11yProps(2)} />
+      </Tabs>
+      <TabPanel value={value} index={0}>
+        Item One
+        {/* Linux image */}
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        Item Two
+        {/* Mac */}
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        Item Three
+        {/* Windows */}
+      </TabPanel>
+    </div>
   );
 }
