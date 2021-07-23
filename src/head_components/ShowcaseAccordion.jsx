@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
       width: 450,
     },
     backgroundColor: `${globalTheme.palette.primary.main}`,
-    // boxShadow: "none",
+    zIndex: 100,
   },
 }));
 
